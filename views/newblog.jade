@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddBlog(name="addblog",method="post",action="/addblog")
+        input#inputBlogName(type="text", placeholder="title", name="title")
+        input#inputBody(type="text", placeholder="body", name="body")
+        button#btnSubmit(type="submit") submit
